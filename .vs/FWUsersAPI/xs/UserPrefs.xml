@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{761E99FC-4D47-4613-AA27-B50A44432212}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.FWUsersAPI PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FWUsersAPI/Dockerfile">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FWUsersAPI/Services/UserService.cs">
     <Files>
       <File FileName="FWUsersAPI/nlog.config" Line="18" Column="8" />
       <File FileName="FWUsersAPI/Startup.cs" Line="72" Column="17" />
-      <File FileName="FWUsersAPI/Dockerfile" Line="1" Column="1" />
+      <File FileName="FWUsersAPI/Dockerfile" Line="22" Column="34" />
+      <File FileName="FWUsersAPI/appsettings.Development.json" Line="3" Column="28" />
+      <File FileName="FWUsersAPI/Services/UserService.cs" Line="35" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
