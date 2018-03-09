@@ -36,7 +36,13 @@ namespace FWUsersAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors(options =>
-                            options.AddPolicy("AllowAnyOrigin", builder => builder.AllowAnyOrigin()));
+                            options.AddPolicy("AllowAnyOrigin", builder => builder
+                                              .AllowAnyHeader()
+                                              .AllowAnyMethod()
+                                              .AllowAnyOrigin()
+                                              .AllowCredentials()
+                                             )
+                            );
             
             services.AddMvc();
 
@@ -59,11 +65,14 @@ namespace FWUsersAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+
+            app.UseCors("AllowAnyOrigin");
+
+
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
             loggerFactory.AddNLog();
 
-            app.UseCors("AllowAnyOrigin");
 
             if (env.IsDevelopment())
             {

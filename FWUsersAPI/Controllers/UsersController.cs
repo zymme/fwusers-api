@@ -12,8 +12,8 @@ using FWUsersAPI.Services;
 
 namespace FWUsersAPI.Controllers
 {
-    [Route("api/[controller]")]
     [EnableCors("AllowAnyOrigin")]
+    [Route("api/[controller]")]
     public class UsersController : Controller
     {
         private readonly IUserService _userService;
@@ -29,8 +29,9 @@ namespace FWUsersAPI.Controllers
             return StatusCode(200, new NotImplementedException());
         }
 
-        [HttpPost()]
+
         [EnableCors("AllowAnyOrigin")]
+        [HttpPost()]
         public IActionResult CreateUser([FromBody] UserForCreateDto user)
         {
             try 
