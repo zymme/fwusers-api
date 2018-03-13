@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{761E99FC-4D47-4613-AA27-B50A44432212}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.FWUsersAPI PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FWUsersAPI/Services/UserService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FWUsersAPI/Controllers/AuthenticationController.cs">
     <Files>
-      <File FileName="FWUsersAPI/Startup.cs" Line="43" Column="66" />
-      <File FileName="FWUsersAPI/Controllers/UsersController.cs" Line="39" Column="1" />
-      <File FileName="FWUsersAPI/Services/UserService.cs" Line="30" Column="1" />
+      <File FileName="FWUsersAPI/Services/UserService.cs" Line="79" Column="1" />
+      <File FileName="FWUsersAPI/Repository/UserRepository.cs" Line="53" Column="44" />
+      <File FileName="FWUsersAPI/Controllers/AuthenticationController.cs" Line="54" Column="13" />
+      <File FileName="FWUsersAPI/Services/IUserService.cs" Line="14" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/dave.zimmer/Projects/FWUsersAPI/FWUsersAPI/Services/UserService.cs" relfile="FWUsersAPI/Services/UserService.cs" line="22" column="1" />
-      <Breakpoint file="/Users/dave.zimmer/Projects/FWUsersAPI/FWUsersAPI/Controllers/UsersController.cs" relfile="FWUsersAPI/Controllers/UsersController.cs" line="39" column="1" />
+      <Breakpoint file="/Users/dave.zimmer/Projects/FWUsersAPI/FWUsersAPI/Controllers/UsersController.cs" relfile="FWUsersAPI/Controllers/UsersController.cs" line="43" column="1" />
+      <Breakpoint file="/Users/dave.zimmer/Projects/FWUsersAPI/FWUsersAPI/Services/UserService.cs" relfile="FWUsersAPI/Services/UserService.cs" line="63" column="1" />
+      <Breakpoint file="/Users/dave.zimmer/Projects/FWUsersAPI/FWUsersAPI/Controllers/AuthenticationController.cs" relfile="FWUsersAPI/Controllers/AuthenticationController.cs" line="40" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

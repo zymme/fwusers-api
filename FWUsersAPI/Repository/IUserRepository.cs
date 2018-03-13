@@ -13,5 +13,7 @@ namespace FWUsersAPI.Repository
         bool Save();
 
         User GetCreatedUser();
+
+        User AuthenticateUser(string username, string password);
     }
 }

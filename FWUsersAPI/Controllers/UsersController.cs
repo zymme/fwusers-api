@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 
+using Microsoft.Extensions.Logging;
+
 using FWUsersAPI.Models;
 using FWUsersAPI.Services;
 
@@ -17,10 +19,12 @@ namespace FWUsersAPI.Controllers
     public class UsersController : Controller
     {
         private readonly IUserService _userService;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController(IUserService userservice)
+        public UsersController(IUserService userservice, ILogger<UsersController> logger)
         {
             _userService = userservice;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -48,11 +52,14 @@ namespace FWUsersAPI.Controllers
             catch(Exception e)
             {
                 Console.WriteLine($"Error in CreateUser() {e.Message}");
+                _logger.LogError($"Error in CreateUser() {e.Message} ");
+
                 return StatusCode(500, $"Error in CreateUser() {e.Message}");
             }
 
 
         }
+
 
     }
 }

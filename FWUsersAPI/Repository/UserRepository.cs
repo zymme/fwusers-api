@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using FWUsersAPI.Models;
 
 using FWUsersAPI.Entities;
@@ -43,6 +44,15 @@ namespace FWUsersAPI.Repository
                 Console.WriteLine($"Error in save () : {e.Message}");
                 return false;
             }
+        }
+
+
+        public User AuthenticateUser(string username, string password)
+        {
+            var usersearch = _userContext.Users.Where(d => d.username == username &&
+                                                      d.pwd == password).FirstOrDefault();
+
+            return usersearch;
         }
     }
 }

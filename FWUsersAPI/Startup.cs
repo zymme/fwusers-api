@@ -87,6 +87,8 @@ namespace FWUsersAPI
             {
                 cfg.CreateMap<Entities.User, Models.UserForCreateDto>();
                 cfg.CreateMap<Models.UserForCreateDto, Entities.User>();
+                cfg.CreateMap<Entities.User, Models.UserDto>();
+                cfg.CreateMap<Models.UserDto, Entities.User>();
             });
 
 
